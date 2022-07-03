@@ -346,6 +346,7 @@ class {{classname}} {{#parentSchema}}extends {{{parent}}} {{/parentSchema}}{{^pa
         return $this;
     }
     {{/vars}}
+    #[\ReturnTypeWillChange]
     /**
      * Returns true if offset exists. False otherwise.
      *
@@ -358,6 +359,7 @@ class {{classname}} {{#parentSchema}}extends {{{parent}}} {{/parentSchema}}{{^pa
         return isset($this->container[$offset]);
     }
 
+    #[\ReturnTypeWillChange]
     /**
      * Gets offset.
      *
@@ -370,6 +372,7 @@ class {{classname}} {{#parentSchema}}extends {{{parent}}} {{/parentSchema}}{{^pa
         return isset($this->container[$offset]) ? $this->container[$offset] : null;
     }
 
+    #[\ReturnTypeWillChange]
     /**
      * Sets value based on offset.
      *
@@ -387,6 +390,7 @@ class {{classname}} {{#parentSchema}}extends {{{parent}}} {{/parentSchema}}{{^pa
         }
     }
 
+    #[\ReturnTypeWillChange]
     /**
      * Unsets offset.
      *
